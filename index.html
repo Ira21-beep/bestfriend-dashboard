@@ -27,6 +27,9 @@
             border-radius: 10px;
             margin-top: 10px;
             box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
         }
         button {
             padding: 10px 15px;
@@ -39,6 +42,13 @@
         }
         button:hover {
             background-color: #e60000;
+        }
+        input {
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ff4d4d;
+            border-radius: 5px;
+            text-align: center;
         }
     </style>
 </head>
@@ -55,5 +65,24 @@
         <button onclick="revealMessage()">Unlock</button>
         <p id="hidden-message">
             Happy birthday devu kutta! <br><br>
-            I’m so proud of you for every single thing you’ve done. Seriously. You inspire me EVERY SINGLE DAY. I have never seen anybody have this much dedication towards anything for the matter of fact and I’m in awe of you. Even for pooping thrice a day, I’m proud of you! Go let your waste out like a good boy
+            I’m so proud of you for every single thing you’ve done. Seriously. You inspire me EVERY SINGLE DAY. I have never seen anybody have this much dedication towards anything for the matter of fact and I’m in awe of you. Even for pooping thrice a day, I’m proud of you! Go let your waste out like a good boy! <br><br>
+            I want to write one long ass senti paragraph but knowing you, you’ll cringe and die of awkwardness so I won’t do that xD <br><br>
+            You’re 19 so fucking learn to make a move bitch. You have bod and brains and can get literally any girl (me being the highest so I mean like anybody else is easy peasy xD) please keep orgy soon so that your bestfriend can get laid. Then I will find a bi boyfriend only for you because true bros don’t leave the other hanging xD <br><br>
+            Anyhoo, I love you so so so very much. I’m so thankful to have you in my life and genuinely genuinely need you with me. You’re a pain in the ass but the only pain in the ass I want to deal with for 2 and a half more lives xD when we meet I will give you tightest hug that you’ll suffocate and die so one life less xD <br><br>
+            You’re one of the best things that has happened to me and I shall cherish this forever. 💖
+        </p>
+    </div>
 
+    <script>
+        function revealMessage() {
+            var password = document.getElementById("passwordInput").value;
+            if (password === "love2025") { 
+                document.getElementById("hidden-message").style.display = "block";
+            } else {
+                alert("Wrong code! Try again.");
+            }
+        }
+    </script>
+
+</body>
+</html>
