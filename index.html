@@ -1,88 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love Dashboard 💖</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #ffe6e6;
-        }
-        h1 {
-            color: #ff4d4d;
-        }
-        iframe {
-            margin: 20px 0;
-            border-radius: 12px;
-        }
-        .secret-section {
-            margin-top: 20px;
-        }
-        #hidden-message {
-            display: none;
-            background: white;
-            padding: 15px;
-            border-radius: 10px;
-            margin-top: 10px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-            width: 60%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        button {
-            padding: 10px 15px;
-            border: none;
-            background-color: #ff4d4d;
-            color: white;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #e60000;
-        }
-        input {
-            padding: 8px;
-            font-size: 14px;
-            border: 1px solid #ff4d4d;
-            border-radius: 5px;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Devu Dashboard 💖</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #ffe6e6;
+      margin: 20px;
+    }
+    h1 {
+      color: #ff4d4d;
+    }
+    iframe {
+      margin: 20px 0;
+      border-radius: 12px;
+    }
+    .secret-section {
+      margin-top: 20px;
+    }
+    #hidden-message {
+      display: none;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 10px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      white-space: pre-line; /* keeps line breaks */
+    }
+    button {
+      padding: 10px 15px;
+      border: none;
+      background-color: #ff4d4d;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+    button:hover {
+      background-color: #e60000;
+    }
+    input {
+      padding: 8px;
+      font-size: 14px;
+      border: 1px solid #ff4d4d;
+      border-radius: 5px;
+      text-align: center;
+    }
+    ul#love-reasons {
+      list-style: none;
+      padding: 0;
+      margin: 20px auto;
+      max-width: 500px;
+      text-align: left;
+    }
+    ul#love-reasons li {
+      font-size: 18px;
+      background: #ffe6e6;
+      margin: 8px 0;
+      padding: 10px 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(255,77,77,0.3);
+      position: relative;
+      padding-left: 40px;
+    }
+    ul#love-reasons li::before {
+      content: "❤️";
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      font-size: 22px;
+    }
+  </style>
 </head>
 <body>
 
-    <h1>💖 Love Dashboard 💖</h1>
+  <h1>💖 Love Dashboard 💖</h1>
 
-    <h2>🎶 Our Spotify Playlist 🎶</h2>
-    <iframe src="https://open.spotify.com/embed/playlist/7KxXB1lJ9Lt6J697tAxGkm?si=491178b133294993" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  <h2>🎶 Our Spotify Playlist 🎶</h2>
+  <iframe
+    src="https://open.spotify.com/embed/playlist/7KxXB1lJ9Lt6J697tAxGkm?si=491178b133294993"
+    width="300"
+    height="380"
+    frameborder="0"
+    allowtransparency="true"
+    allow="encrypted-media"
+  ></iframe>
 
-    <div class="secret-section">
-        <h2>🔒 Secret Love Letter 🔒</h2>
-        <input type="password" id="passwordInput" placeholder="Enter secret code">
-        <button onclick="revealMessage()">Unlock</button>
-        <p id="hidden-message">
-            Happy birthday devu kutta! <br><br>
-            I’m so proud of you for every single thing you’ve done. Seriously. You inspire me EVERY SINGLE DAY. I have never seen anybody have this much dedication towards anything for the matter of fact and I’m in awe of you. Even for pooping thrice a day, I’m proud of you! Go let your waste out like a good boy! <br><br>
-            I want to write one long ass senti paragraph but knowing you, you’ll cringe and die of awkwardness so I won’t do that xD <br><br>
-            You’re 19 so fucking learn to make a move bitch. You have bod and brains and can get literally any girl (me being the highest so I mean like anybody else is easy peasy xD) please keep orgy soon so that your bestfriend can get laid. Then I will find a bi boyfriend only for you because true bros don’t leave the other hanging xD <br><br>
-            Anyhoo, I love you so so so very much. I’m so thankful to have you in my life and genuinely genuinely need you with me. You’re a pain in the ass but the only pain in the ass I want to deal with for 2 and a half more lives xD when we meet I will give you tightest hug that you’ll suffocate and die so one life less xD <br><br>
-            You’re one of the best things that has happened to me and I shall cherish this forever. 💖
-        </p>
-    </div>
+  <div class="secret-section">
+    <h2>🔒 Secret Love Letter 🔒</h2>
+    <input type="password" id="passwordInput" placeholder="Enter secret code" />
+    <button onclick="revealMessage()">Unlock</button>
+    <p id="hidden-message">
+      Happy birthday devu kutta! <br /><br />
+      I’m so proud of you for every single thing you’ve done. Seriously. You inspire me EVERY SINGLE DAY. I have never seen anybody have this much dedication towards anything for the matter of fact and I’m in awe of you. Even for pooping thrice a day, I’m proud of you! Go let your waste out like a good boy! <br /><br />
+      I want to write one long ass senti paragraph but knowing you, you’ll cringe and die of awkwardness so I won’t do that xD <br /><br />
+      You’re 19 so fucking learn to make a move bitch. You have bod and brains and can get literally any girl (me being the highest so I mean like anybody else is easy peasy xD) please keep orgy soon so that your bestfriend can get laid. Then I will find a bi boyfriend only for you because true bros don’t leave the other hanging xD <br /><br />
+      Anyhoo, I love you so so so very much. I’m so thankful to have you in my life and genuinely genuinely need you with me. You’re a pain in the ass but the only pain in the ass I want to deal with for 2 and a half more lives xD when we meet I will give you tightest hug that you’ll suffocate and die so one life less xD <br /><br />
+      You’re one of the best things that has happened to me and I shall cherish this forever. 💖
+    </p>
+  </div>
 
-    <script>
-        function revealMessage() {
-            var password = document.getElementById("passwordInput").value;
-            if (password === "love2025") { 
-                document.getElementById("hidden-message").style.display = "block";
-            } else {
-                alert("Wrong code! Try again.");
-            }
-        }
-    </script>
+  <div class="reasons-section">
+    <h2>💌 Reasons I Love You 💌</h2>
+    <ul id="love-reasons">
+      <li>You called me Dory</li>
+      <li>You like my smell</li>
+      <li>You say the shittiest jokes</li>
+      <li>You think I'm the funniest person alive</li>
+      <li>You inspire me to become a better version</li>
+      <li>You drive me crazy</li>
+      <li>I love your smile</li>
+      <li>Your eyes twinkle when you are happy</li>
+      <li>You love family</li>
+      <li>You stood by me for 8 years</li>
+      <li>You've been my OG friend since day 1</li>
+      <li>You make me feel safe</li>
+      <li>I feel sleepy around you</li>
+      <li>Your hugs make me happy</li>
+      <li>You're my bestfriend</li>
+    </ul>
+  </div>
+
+  <script>
+    function revealMessage() {
+      var password = document.getElementById("passwordInput").value;
+      if (password === "xD") {
+        document.getElementById("hidden-message").style.display = "block";
+      } else {
+        alert("Wrong code! Try again.");
+      }
+    }
+  </script>
 
 </body>
 </html>
